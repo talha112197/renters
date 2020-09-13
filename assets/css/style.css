@@ -1,0 +1,372 @@
+/*  RESET CSS  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-color: #28A745;
+    --light-green-color: #6bbb7e;
+    --parrot-green: #2cd453;
+    --minimal-green: #5ce97d;
+    --white-color: #fff;
+    --black-color: #000;
+    --light-grey: rgba(255, 255, 255, .5);
+    --slate-grey: rgb(202, 202, 202);
+    --dark-grey: rgb(75, 74, 74);
+    --cream-color: #f4f4f4;
+
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Maven Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+/* custom classes */
+
+.mb-6 {
+    margin-top: 1.55rem;
+}
+
+.padding {
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+/*        Font awesome icons css             */ 
+
+i {
+    cursor: pointer;
+}
+
+i.fa-phone, i.fa-map, i.fa-map-marker-alt, i.fa-mobile, i.fa-envelope, i.fa-clock {
+    color: var(--green-color);
+    font-size: 1.3rem;
+}
+
+i.fa-chevron-left, i.fa-chevron-right {
+   color: var(--white-color);
+   font-size: 1.5rem;
+   padding: 0.3rem;
+}
+
+i.fa-chevron-left {
+    background-color: var(--black-color);
+    
+}
+
+i.fa-chevron-right {
+    background-color: var(--light-green-color);
+}
+
+/*         Font awesome css ends here                  */
+
+
+/*         Hover css                */
+
+i.fa-chevron-right:hover {
+    color: var(--black-color);
+}
+
+i.fa-chevron-left:hover {
+    color: var(--light-green-color);
+}
+
+.ph-num:hover {
+    color: var(--light-grey) ;
+}
+
+.filter-button:hover {
+    color: var(--white-color);
+    background-color: var(--parrot-green);
+}
+
+/*            Hover css ends here                  */
+
+/* logo height adjust */
+
+img.logo {
+    height: 3.5rem;
+}
+
+
+.ph-num {
+    color: var(--white-color);
+}
+
+div.indicators {    
+    top: 18.65rem;
+    left: 45%;
+}
+
+div.indicators, .apartment-price-info {
+    position: absolute;
+}
+
+.apartment-price-info {
+    width: 28%;
+    top: 25.43rem;
+}
+
+.apartment-price-heading {
+    color: var(--light-green-color);
+}
+
+.apartment-info-row {
+    background-color: var(--light-green-color);
+}
+
+/*  All HR css */
+.about-hr, .virtual-tour-hr {
+    width: 50%;
+    
+}
+
+.about-hr, .featured-properties-hr, .our-services-hr, .virtual-tour-hr, .nearby-hr, .footer-hr {
+    margin: 0 auto;
+    border-width: 0.3rem;
+    border-radius: 1rem;
+}
+
+.secondary-about-hr {
+    width: 25%;
+    left: 36%;
+   
+}
+
+.our-services-hr, .virtual-tour-hr, .footer-hr {
+    background-color: var(--slate-grey);
+}
+
+.nearby-hr {
+    background-color: var(--dark-grey);
+}
+
+.secondary-about-hr, .secondary-featured-hr, .secondary-virtual-hr, .secondary-nearby-hr, .secondary-footer-hr {
+    border-width: 0.5rem;
+    background-color: var(--green-color);
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 5.8rem;
+    
+}
+
+.secondary-nearby-hr {
+    top: 8.35rem;
+    width: 15%;
+    left: 42%;
+}
+
+.secondary-featured-hr {
+    top: 5.8rem;
+    width: 15%;
+    left: 42%;
+}
+
+.featured-properties-hr, .our-services-hr, .virtual-tour-hr, .nearby-hr, .footer-hr {
+    width: 30%;
+}
+
+.secondary-virtual-hr  {
+     top: 15.45rem;
+     left: 42%;
+     width: 15%;
+}
+
+.secondary-footer-hr {
+    width: 15%;
+    top: 1.7rem;
+    left: 42%;
+}
+
+/* HR css ends here */
+
+.book-now-title {
+    font-weight: 100;
+}
+
+/* sections css */
+
+section#featured-properties, section#nearby-places {
+     background-color: var(--cream-color);
+}
+
+section#newsletter {
+    background-color: var(--green-color);
+}
+
+section#our-services {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bedroom.jpeg');
+}
+
+section#our-services, section#virtual-tour {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#our-services, .detail-content {
+    width: 100%;
+    height: 100vh;
+}
+
+section#virtual-tour {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/bannerBcg.jpeg');
+    width: 100%;
+    height: 60vh;
+    
+}
+
+.detail-content {
+    display: flex;
+    align-items: center;
+}
+
+.details-tab {
+    flex: none;
+    position: absolute;
+    left: 35%;
+    top: 25.35rem;
+}
+
+.green {
+    border: 1px solid var(--parrot-green);
+    color: var(--minimal-green);
+    padding: 0.5rem;
+}
+
+.filter-button {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+div.col-lg-2 > i {
+    animation: animate 3s ease-in-out infinite;
+}
+
+.navbar-button {
+    animation: animateBtn 2s ease-in-out infinite ;
+}
+
+
+@keyframes animate {
+        0% {
+            color: #2cd453;
+        }
+
+        100% {
+            color: #fff;
+        }
+}
+
+@keyframes animateBtn {
+     0% {
+         border-color: #28A745;
+     }
+     100% {
+         border-color: #fff;
+         color: #fff;
+     }
+}
+
+@media (min-width: 250px) and (max-width: 600px) {
+    .apartment-price-info {
+        position: static;
+        width: 100%;
+    }
+
+    blockquote.blockquote {
+        text-align: left !important;
+    }
+
+    h2.featured-heading {
+        font-size: 2rem;
+    }
+
+    .secondary-featured-hr {
+        top: 4rem;
+        width: 15%;
+        left: 42%;
+    }
+    
+    div.form-inline input {
+        width: 70%;
+    }  
+
+    section#our-services {
+        height: 100%;
+    }
+
+    .our-services-secondary-hr {
+        top: 5.8rem;
+    }
+
+    .our-gallery-hr {
+        top: 5.8rem;
+    }
+
+    .filter-button {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    section#virtual-tour {
+        height: 100%;
+    }
+
+    .secondary-virtual-hr {
+        top: 19.65rem;
+    }
+
+    iframe {
+        width: 450px;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+    
+    .details-tab {
+        top: 27.45rem;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 989px) {
+    .apartment-price-info {
+        top: 32rem;
+    }
+    
+    div.form-inline {
+        justify-content: center;
+        display: flex;
+    }
+
+    section#our-services {
+        height: 100%;
+    }
+
+    .our-services-heading {
+        font-size: 2rem;
+    }
+
+    .details-tab {
+        top: 33rem;
+        left: 42%;
+    }
+
+    .our-services-secondary-hr {
+        top: 4rem;
+    }
+
+    iframe {
+        width: 700px;
+        margin-bottom: 1rem;
+    }
+
+    div.indicators {
+        top: 30rem;
+    }
+}
